@@ -1,0 +1,162 @@
+<html>
+<main>
+<div class="pagewrap">
+    <form class="form" id="form">
+      <h3 class="form__title">Sing Up Form Example</h3>
+      
+      <div class="container">
+      
+            <label id="userLabel1" for="fname" class="container__label">First,Last Name*</label> 
+             <input class="container__input" type="text" id="fname" name="fname" value="" required> 
+           <input class="container__input" type="text" id="Lname" name="Lname" value="" required> 
+   
+      </div>
+      
+      <div class="container">
+        <label id="userLabel3" for="org" class="container__label">Organization</label>
+        <input class="container__input" type="text" id="org" name="org" value="" >
+        
+      </div>
+      <div class="container">
+        <label id="userLabel4" for="org" class="container__label">Email Address*</label>
+        <input class="container__input" type="text" id="Email" name="Email" value="" required>
+       
+      </div>
+       <div class="container">
+        <label id="userLabel5" for="WorkPhone" class="container__label">Work Phone</label>
+        <input class="container__input" type="text" id="WorkPhone" name="WorkPhone" value="" >
+       
+      </div>
+  
+      <div class="container">
+        <label id="userLabel6" for="HPhone" class="container__label">Home Phone</label>
+        <input class="container__input" type="text" id="HPhone" name="HPhone" value="" >
+       
+      </div>
+  
+       <div class="container">
+        <label id="userLabel7" for="CPhone" class="container__label">Cell Phone</label>
+        <input class="container__input" type="text" id="CPhone" name="CPhone" value="" >
+        
+      </div>
+  
+      <div class="container">
+        <label id="userLabel8" for="fax" class="container__label">Fax</label>
+        <input class="container__input" type="text" id="fax" name="fax" value="" >
+       
+      </div>
+  
+      <div class="container">
+        <label id="userLabel9" for="add1" class="container__label">Address 1*</label>
+        <input class="container__input" type="text" id="add1" name="add1" value="" required>
+        
+      </div>
+  
+      <div class="container">
+        <label id="userLabel10" for="add2" class="container__label">Address 2</label>
+        <input class="container__input" type="text" id="add2" name="add2" value="" >
+       
+      </div>
+  
+      <div class="container">
+          <label id="userLabel11" for="city" class="container__label">City* </label>
+          <input class="container__input" type="text" id="city" name="city" value="" required>
+          
+        </div>
+  
+        <div class="container">
+          <label id="userLabel12" for="SP" class="container__label">State Provioce </label>
+          <input class="container__input" type="text" id="SP" name="SP" value="" >
+         
+        </div>
+  
+        <div class="container">
+          <label id="userLabel13" for="zippstel" class="container__label">zip postal Code </label>
+          <input class="container__input" type="text" id="SP" name="zippstel" value="" >
+          
+        </div>
+  
+        <div class="container">
+          <label id="userLabel14" for="Country" class="container__label">Country* </label>
+          <input class="container__input" type="text" id="Country" name="Country" value="" required>
+          
+        </div>
+  
+        <div class="container">
+            <label id="userLabel15" for="requiredlabel" class="container__label">*.required fields </label>
+            <input  id="submit" type="submit" value="Submit" />           
+          </div>
+        </table>
+    </form>
+  </div>
+</main>
+
+
+
+
+<style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #96bac4;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #96bac4;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #CEE5F2;
+      padding: 20px;
+    }
+    </style>
+
+  
+  <script>
+  function validate() {
+  var fname = document.getElementById('fname').value;
+  var Lname = document.getElementById('Lname').value;
+  var address1 = document.getElementById('add1').value;
+  var city = document.getElementById('city').value;
+  var Country = document.getElementById('Country').value;
+
+      
+    if (fname === "" || fname === null) {
+      alert("First Name required");               
+    }
+    if (Lname === "" || Lname === null) {
+        alert("Last Name required");  
+    }
+    if (address1 === "" || address1 === null) {
+        alert("address1 required");  
+    }
+    if (city === "" || city === null) {
+        alert("city required");  
+    }
+    if (Country === "" || Country === null) {
+        alert("Country required");  
+    }
+  }
+  var submit = document.getElementById('submit');
+  submit.addEventListener('click', validate);
+  $("#form").submit(_=> alert("You have successfully submitted"));
+ 
+  
+  
+  </script>
