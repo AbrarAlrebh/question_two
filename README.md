@@ -1,9 +1,10 @@
 # question_two
+     
 <html>
 <main>
 <div class="pagewrap">
     <form class="form" id="form">
-      <h3 class="form__title">Sing Up Form Example</h3>
+      <h2 class="form__title">Sing Up Form Example</h2>
       
       <div class="container">
       
@@ -108,7 +109,7 @@
     
     input[type=submit] {
       width: 100%;
-      background-color: #96bac4;
+      background-color: #ACCBE1;
       color: white;
       padding: 14px 20px;
       margin: 8px 0;
@@ -118,7 +119,7 @@
     }
     
     input[type=submit]:hover {
-      background-color: #96bac4;
+      background-color: #ACCBE1;
     }
     
     div {
